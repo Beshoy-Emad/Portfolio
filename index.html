@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beshoy Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<nav>
+    <a class="logo" href="#home">BESHOY EMAD</a>
+    
+    <div class="menu-icon" id="menuIcon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>        
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>    
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+<div class="container" id="home">
+    <div class="text">
+        <h1>
+          <span class="hi">Hi, I'm</span><br>
+          <span class="name">Beshoy Emad</span>
+        </h1>
+        <h2>I'm a Front-End Developer</h2>
+
+        <div class="buttons">
+            <button class="btn btn-primary"><a href="#projects">View My Projects</a></button>
+            <button class="btn btn-secondary"><a href="#contact">Contact Me</a></button>       
+        </div>
+    </div>
+
+    <div class="image">
+        <div class="img-box">
+             <div class="circle"></div>
+            <img src="WhatsApp Image 2026-03-25 at 5.46.38 PM.jpeg" alt="">
+        </div>
+    </div>
+
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="about-container">
+
+        <div class="about-img">
+            <div class="about-img-box">
+                <img src="about photo.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            
+            <p>
+                I’m a Computer Science student at Sohag University, passionate about Front-End Development and Data Analysis.
+            </p>
+
+            <p>
+                I work as a Freelance Front-End Developer, building modern and responsive websites. I’m also learning Python, Excel, and Power BI to grow in data analysis.
+            </p>
+
+            <p>
+                I enjoy teamwork, have experience leading small projects, and always aim to deliver clean and efficient work.
+            </p>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>BootStrap</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Excel</span>
+                <span>Power BI</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-container">
+
+
+        <div class="project-card">
+
+                    <video autoplay muted loop>
+                        <source src="Video Project 1.mp4" type="video/mp4">
+                    </video>
+
+            <div class="project-overlay">
+                <h3>Personal Portfolio</h3>
+                <p>Modern UI + Animations</p>
+
+                <div class="project-buttons">
+                    <a href="#" class="btnP">View Site</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+                    <video autoplay muted loop>
+                        <source src="coffee video.mp4" type="video/mp4">
+                    </video>
+
+            <div class="project-overlay">
+                <h3>Coffee Hunter</h3>
+                <p>Coffee Website UI</p>
+
+                <div class="project-buttons">
+                    <a href="https://beshoy-emad.github.io/Coffee/" class="btnP">View Site</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Let's build something amazing 🚀</h3>
+            <p>Choose your preferred way to contact me:</p>
+
+            <div class="contact-buttons">
+
+                <a class="contact-btn" href="mailto:beshoyemadabdu@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Send Email
+                </a>
+
+                <a class="contact-btn" href="tel:+201005862987">
+                    <i class="fa-solid fa-phone"></i>
+                    Call Me
+                </a>
+
+                <a class="contact-btn" href="https://wa.me/201005862987" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+
+                <a class="contact-btn" href="https://www.linkedin.com/in/beshoy-3mad" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a class="contact-btn" href="https://github.com/Beshoy-Emad" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a class="contact-btn" href="https://www.instagram.com/beshoy__3mad?igsh=MTluaTR1Mmdmamxydg==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-right">
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="successMessage" class="success-message">
+                ✅ Your message has been sent successfully!
+            </div>
+
+            <form class="contact-form"
+                  action="https://formspree.io/f/mojyewqn"
+                  method="POST"
+                  id="contactForm">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="links-row">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <p>© 2026 <span>Beshoy Emad</span> All Rights Reserved</p>
+        </div>
+
+
+        <div class="footer-right">
+            <a href="https://github.com/Beshoy-Emad" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/beshoy-3mad" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/beshoy__3mad?igsh=MTluaTR1Mmdmamxydg==" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
